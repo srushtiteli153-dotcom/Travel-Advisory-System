@@ -3,7 +3,7 @@ import axios from 'axios';
 import SubscribeForm from './SubscribeForm';
 import { AlertCircle, AlertTriangle, CheckCircle, CloudRain, Wind, Thermometer, MapPin } from 'lucide-react';
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:5000';
+const API_BASE_URL = "https://travel-advisory-system.onrender.com";
 
 const Dashboard = () => {
   const [advisories, setAdvisories] = useState([]);
