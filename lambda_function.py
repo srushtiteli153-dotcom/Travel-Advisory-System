@@ -194,7 +194,10 @@ def process_new_subscription(origin: str, destination: str, email: str):
     """
     route = {"origin": origin, "destination": destination}
     # Pass the email so it ONLY sends to this specific person
-    process_route(route, target_email=email)
+    try:
+        process_route(route, target_email=email)
+    except Exception as e:
+        print(f"Skipped instant email due to Render firewall: {e}")
 
 
 def cleanup_subscriptions():

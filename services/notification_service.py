@@ -136,7 +136,7 @@ def send_notification(
 
     try:
         # connect to gmail
-        server = smtplib.SMTP('smtp.gmail.com', 587)
+        server = smtplib.SMTP('smtp.gmail.com', 587, timeout=3)
         server.starttls()
         server.login(GMAIL_USER, GMAIL_APP_PASSWORD)
 
