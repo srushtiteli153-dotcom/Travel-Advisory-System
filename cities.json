@@ -1,0 +1,37 @@
+
+{
+  "routes": [
+    {
+      "origin": "Mumbai",
+      "destination": "Pune"
+    },
+    {
+      "origin": "Delhi",
+      "destination": "Agra"
+    },
+    {
+      "origin": "Bangalore",
+      "destination": "Chennai"
+    },
+    {
+      "origin": "Hyderabad",
+      "destination": "Vijayawada"
+    },
+    {
+      "origin": "Kolkata",
+      "destination": "Bhubaneswar"
+    },
+    {
+      "origin": "Ahmedabad",
+      "destination": "Surat"
+    },
+    {
+      "origin": "Jaipur",
+      "destination": "Jodhpur"
+    },
+    {
+      "origin": "Delhi",
+      "destination": "Chandigarh"
+    }
+  ]
+}

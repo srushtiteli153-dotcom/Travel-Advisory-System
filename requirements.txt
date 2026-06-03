@@ -1,0 +1,14 @@
+
+# requirements.txt
+
+requests>=2.31.0
+
+# All other dependencies:
+# logging
+# json
+# datetime
+# zoneinfo
+# uuid
+#
+# are part of Python 3.11 standard library
+# and do not require installation.

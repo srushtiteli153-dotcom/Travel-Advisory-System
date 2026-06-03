@@ -1,0 +1,13 @@
+version = 0.1
+
+[default.deploy.parameters]
+stack_name = "travel-advisory-system"
+resolve_s3 = true
+s3_prefix = "travel-advisory-system"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "NotificationEmail=\"\""
+image_repositories = []
+
+[default.global.parameters]
+region = "ap-south-1"

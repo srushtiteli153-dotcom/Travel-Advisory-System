@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: travel-advisory-api
+    env: python
+    buildCommand: "pip install -r requirements_dashboard.txt"
+    startCommand: "gunicorn app:app"
+    envVars:
+      - key: AWS_ACCESS_KEY_ID
+        sync: false
+      - key: AWS_SECRET_ACCESS_KEY
+        sync: false
+      - key: AWS_DEFAULT_REGION
+        value: "ap-south-1"
